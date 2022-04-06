@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            
+            text-align: center;
+            margin: 0;
+            font-family: Open Sans;
+            
+        }
+
+        .topnav {
+            
+            overflow: hidden;
+            background-color: rgb(133, 128, 128);
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            width: 25%;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #25D366;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a class="active" href="Dashboard.html">Dashboard</a>
+        <a href="Add_Transactions.html">Add Transactions</a>
+        <a href="help.html">Help</a>
+        <a href="index.html">logout</a>
+    </div>
+
+    <div  class="text" style="padding-left:16px">
+        <h1>Welcome Username!</h1>
+    </div>
+    <div class="text">
+        you can change your budget limit here.
+    </div>
+    <input  id="user_input" class="your_class" type="number" min="0" default="0" onkeydown="javascript: return event.keyCode == 69 ? false : true"/
+    >
+        <div class="text">
+                Your set budget is:<span id="Set_budget"></span>
+        </div>
+    <div class="report_btn">
+        <button class="confirm"  onclick="alerts()" >Set budget</button>             
+    </div>
+
+
+    
+    
+<script src="app.js"></script>
+</body>
+
+</html>
